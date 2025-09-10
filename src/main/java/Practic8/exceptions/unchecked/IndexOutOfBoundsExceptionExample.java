@@ -1,0 +1,13 @@
+package Practic8.exceptions.unchecked;
+
+public class IndexOutOfBoundsExceptionExample {
+    public static void main(String[] args) {
+        try {
+            int[] numbers = {1,2,3};
+            int number = numbers[5]; //Попытка доступа к несуществующему индексу
+        } catch (IndexOutOfBoundsException e){
+            System.out.println("Попытка доступа к индексу за пределами массива.");
+        }
+    }
+}
+// Когда мы выходим за пределы массива в попытке доступа
